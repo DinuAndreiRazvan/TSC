@@ -71,7 +71,7 @@
 
 | Component | Description | Manufacturer | Part Number | Datasheet | Shop |
 |-----------|-------------|--------------|-------------|-----------|------|
-| ESP32-C6-WROOM-1-N8 | Wi-Fi, BLE, Zigbee SoC Module | Espressif Systems | ESP32-C6-WROOM-1-N8 | [Datasheet](#https://www.espressif.com/sites/default/files/documentation/esp32-c6-wroom-1_wroom-1u_datasheet_en.pdf) | [Shop](#https://eu.mouser.com/ProductDetail/Espressif-Systems/ESP32-C6-WROOM-1U-N8?qs=1Kr7Jg1SGW%2FzPU4G%252ByMwkA%3D%3D) |
+| ESP32-C6-WROOM-1-N8 | Wi-Fi, BLE, Zigbee SoC Module | Espressif Systems | ESP32-C6-WROOM-1-N8 | [Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6-wroom-1_wroom-1u_datasheet_en.pdf) | [Shop](#https://eu.mouser.com/ProductDetail/Espressif-Systems/ESP32-C6-WROOM-1U-N8?qs=1Kr7Jg1SGW%2FzPU4G%252ByMwkA%3D%3D) |
 | MCP73831 | Li-Po Battery Charging Controller | Microchip | MCP73831T | [Datasheet](#) |
 | XC6220A331MR-G | LDO Voltage Regulator | Torex | XC6220A331MR-G | [Datasheet](#) |
 | BME680 | Environmental Sensor | Bosch Sensortec | BME680 | [Datasheet](#) |
