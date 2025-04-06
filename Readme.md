@@ -107,25 +107,6 @@ The power path includes:
 
 
 
-| GPIO 16/17 | UART TX/RX | USB-to-Serial | UART |
-
-| GPIO 21 | SDA | I²C Bus (BME680, RTC) | I²C |
-| GPIO 22 | SCL | I²C Bus (BME680, RTC) | I²C |
-| GPIO 23 | E-Paper Reset | ADC | Analog Input |
-
-| GPIO 5 | Flash CS | W25Q512JVEIQ | SPI |
-| GPIO 8/9/10 | MOSI/MISO/CLK | SPI Bus (E-Paper, Flash, SD) | SPI |
-| GPIO 11 | E-Paper CS | E-Paper Display | SPI |
-| GPIO 12 | E-Paper DC | E-Paper Display | Digital Output |
-| GPIO 13 | E-Paper BUSY | E-Paper Display | Digital Input |
-| GPIO 14 | E-Paper RESET | E-Paper Display | Digital Output |
-| GPIO 15 | Change Button | CHANGE_BUTTON | Digital Input |
-| GPIO 16 | Battery Gauge Alert | MAX17048G | Digital Input |
-| GPIO 17 | Charging LED | CHG_LED | Digital Output |
-
-
-
-
 ## Images
 
 *Complete View*
