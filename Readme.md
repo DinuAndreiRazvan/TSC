@@ -1,9 +1,10 @@
-# eBook Project
+# eBook Project - Autodesk Fusion 360 
+
+
 
 ## Block Diagram
 
 ![Block Diagram](Images/BlockDiagram.png)
-
 
 
 
@@ -80,13 +81,39 @@ The power path includes:
 
 | ESP32-C6 Pin | Function | Connected Component | Interface |
 |--------------|----------|---------------------|-----------|
-| GPIO 0 | Boot | BOOT_BUTTON | Digital Input (w/ pull-up) |
-| GPIO 1/2 | UART TX/RX | USB-to-Serial | UART |
-| GPIO 3 | Reset | RESET_BUTTON | Digital Input |
+| EN | Reset | RESET_BUTTON | Digital Input |
+| GPIO 0 | INT_RTC | DS3231SN | Interrupt |
+| GPIO 1 | 32 khz | DS3231SN | Clock Output |
+| GPIO 2 | MISO | SPI Bus | SPI |
+| GPIO 3 | E-Paper BUSY | E-Paper Display | Digital Input |
 | GPIO 4 | SD Card CS | SD Card Slot | SPI |
+| GPIO 5 | E-Paper DC | E-Paper Display | Digital Output |
+| GPIO 6 | SCK - Clock | SPI Bus | SPI |
+| GPIO 7 | MOSI | SPI Bus | SPI |
+| GPIO 9 | IO/Boot | BOOT_BUTTON | Digital Input |
+| GPIO 10 | E-Paper CS | E-Paper Display | SPI |
+| GPIO 11 | Flash CS | W25Q512JVEIQ | SPI |
+| GPIO 12 | USB_D- | USB Interface | USB |
+| GPIO 13 | USB_D+ | USB Interface | USB |
+| GPIO 15 | IO/Change | CHANGE_BUTTON | Digital Input |
+| GPIO 16 | TX | USB-to-Serial | UART |
+| GPIO 17 | RX | USB-to-Serial | UART |
+| GPIO 18 | RTC Reset | DS3231SN | Digital Output |
+| GPIO 19 | I2C_PW | I²C Power Control | Digital Output |
+| GPIO 20 | EPD_3V3_C | E-Paper Display Power | Power Control |
+| GPIO 21 | SDA | I²C Bus (BME680, RTC) | I²C |
+| GPIO 22 | SCL | I²C Bus (BME680, RTC) | I²C |
+| GPIO 23 | E-Paper RESET | E-Paper Display | Digital Output |
+
+
+
+| GPIO 16/17 | UART TX/RX | USB-to-Serial | UART |
+
+| GPIO 21 | SDA | I²C Bus (BME680, RTC) | I²C |
+| GPIO 22 | SCL | I²C Bus (BME680, RTC) | I²C |
+| GPIO 23 | E-Paper Reset | ADC | Analog Input |
+
 | GPIO 5 | Flash CS | W25Q512JVEIQ | SPI |
-| GPIO 6 | SDA | I²C Bus (BME680, RTC) | I²C |
-| GPIO 7 | SCL | I²C Bus (BME680, RTC) | I²C |
 | GPIO 8/9/10 | MOSI/MISO/CLK | SPI Bus (E-Paper, Flash, SD) | SPI |
 | GPIO 11 | E-Paper CS | E-Paper Display | SPI |
 | GPIO 12 | E-Paper DC | E-Paper Display | Digital Output |
@@ -95,7 +122,6 @@ The power path includes:
 | GPIO 15 | Change Button | CHANGE_BUTTON | Digital Input |
 | GPIO 16 | Battery Gauge Alert | MAX17048G | Digital Input |
 | GPIO 17 | Charging LED | CHG_LED | Digital Output |
-| GPIO 21 | Battery Level | ADC | Analog Input |
 
 
 
