@@ -1,5 +1,16 @@
 # eBook Project - Autodesk Fusion 360 
 
+## Images
+
+*Complete View*
+![Complete View](Images/Complete_view.jpeg)
+
+*Exploded View*
+![Exploded View](Images/Exploded_view.jpeg)
+
+*PCB*
+![PCB](Images/PCB.jpeg)
+
 
 
 ## Block Diagram
@@ -106,14 +117,3 @@ The power path includes:
 | GPIO 23 | E-Paper RESET | E-Paper Display | Digital Output |
 
 
-
-## Images
-
-*Complete View*
-![Complete View](Images/Complete_view.jpeg)
-
-*Exploded View*
-![Exploded View](Images/Exploded_view.jpeg)
-
-*PCB*
-![PCB](Images/PCB.jpeg)
